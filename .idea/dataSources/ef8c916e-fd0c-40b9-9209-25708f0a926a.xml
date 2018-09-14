@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
+    <root id="1"/>
+    <schema id="2" parent="1" name="how2java"/>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="stuattendance"/>
+    <schema id="6" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="7" parent="1" name="tmall_ssm"/>
+    <schema id="8" parent="1" name="tsystem"/>
+    <schema id="9" parent="1" name="work"/>
+    <schema id="10" parent="1" name="wuliu"/>
+    <table id="11" parent="6" name="user"/>
+    <column id="12" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12</DataType>
+    </column>
+    <column id="14" parent="11" name="password">
+      <Position>3</Position>
+      <DataType>VARCHAR(20)|12</DataType>
+    </column>
+    <key id="15" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
